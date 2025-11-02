@@ -13,12 +13,9 @@ export default function UseEffectEventAfter() {
   });
 
   useEffect(() => {
-    console.log('useEffectが実行されました');
-    const interval = setInterval(() => {
-      cointEventHandler();
-    }, 10_000);
-    return () => clearInterval(interval);
-  }, []);
+    window.addEventListener('click', cointEventHandler);
+    return () => window.removeEventListener('click', cointEventHandler);
+  }, []); // ← ここにcointEventHandlerの依存関係を追加する必要がない
 
   return (
     <Card className="bg-white dark:bg-black p-8">
