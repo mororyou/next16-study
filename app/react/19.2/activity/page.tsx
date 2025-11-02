@@ -1,5 +1,5 @@
 import ActivityAfter from './_components/After';
-import ActivityBefor from './_components/Befor';
+import ActivityBefor from './_components/Before';
 
 export default function ActivityPage() {
   return (

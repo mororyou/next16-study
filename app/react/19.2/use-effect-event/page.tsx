@@ -1,5 +1,5 @@
 import UseEffectEventAfter from './_components/After';
-import UseEffectEventBefor from './_components/Befor';
+import UseEffectEventBefor from './_components/Before';
 
 export default function UseEffectEventPage() {
   return (
